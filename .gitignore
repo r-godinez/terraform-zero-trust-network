@@ -1,6 +1,14 @@
 # Local .terraform directories
 .terraform/
 
+# non-negotiable for public repos
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+.env
+# prevents leaks of sensitive data
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
